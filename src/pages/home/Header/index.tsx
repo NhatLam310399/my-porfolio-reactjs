@@ -2,17 +2,20 @@ import { HeaderContainer, Item, MenuItem } from "./styles";
 
 interface IHeaderProps {}
 
-const Header: React.FC<IHeaderProps> = props => {
+const Header: React.FC<IHeaderProps> = (props) => {
   return (
     <HeaderContainer>
       <MenuItem>
-        <Item>About me</Item>
+        <Item href="#aboutMe">About me</Item>
       </MenuItem>
       <MenuItem>
-        <Item>Skills</Item>
+        <Item href="#skills">Skills</Item>
       </MenuItem>
       <MenuItem>
-        <Item>Project</Item>
+        <Item href="#project">Project</Item>
+      </MenuItem>
+      <MenuItem>
+        <Item href="#experience">Experience</Item>
       </MenuItem>
     </HeaderContainer>
   );

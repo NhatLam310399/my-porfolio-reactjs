@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from "react";
 import Typing from "react-typing-animation";
 
-import TypingText from "components/TypingText";
 import StartScreen from "components/StartScreen";
 import CursorCustom from "components/CursorCustom";
+import { Icons } from "asset/svg";
 
 import Header from "./Header";
 import Banner from "./Banner";
 import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 import Project from "./Project";
+import Experiences from "./Experiences";
+import Footer from "./Footer";
 
-import { HomeContainer, Typing as Type } from "./styles";
+import { HomeContainer, Typing as Type, Line } from "./styles";
 
 const Home: React.FC = () => {
   const [openModal, setOpenModal] = useState(true);
@@ -22,8 +24,19 @@ const Home: React.FC = () => {
         <Header />
         <Banner />
         <AboutMe />
+        <Line>
+          <Icons.SeparatorIcon />
+        </Line>
         <Skills />
+        <Line>
+          <Icons.SeparatorIcon />
+        </Line>
         <Project />
+        <Line>
+          <Icons.SeparatorIcon />
+        </Line>
+        <Experiences />
+        <Footer />
       </HomeContainer>
       <CursorCustom />
       <StartScreen open={openModal}>

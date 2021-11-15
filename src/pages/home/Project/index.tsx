@@ -42,17 +42,17 @@ const Project: React.FC<IProjectProps> = (props) => {
     },
   ];
   return (
-    <ProjectContainer>
+    <ProjectContainer id="project">
       <HeaderSession color="secondary-1" text="project" />
       <BoxProject>
         <Carousel
-          show={4}
+          show={3.5}
           infinite
           transition={1}
           swiping
           swipeOn={1}
           responsive
-          slide={1}
+          slide={2}
           className="gap-2"
         >
           {projectList.map((project) => (

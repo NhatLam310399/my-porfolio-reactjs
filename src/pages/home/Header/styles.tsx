@@ -21,6 +21,6 @@ export const MenuItem = styled.div`
     }
   }
 `;
-export const Item = styled.p`
+export const Item = styled.a`
   ${tw`z-30`}
 `;

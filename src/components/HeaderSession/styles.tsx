@@ -2,7 +2,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 
 export const HeaderSessionContainer = styled.div`
-  ${tw`flex justify-center w-full `}
+  ${tw`flex justify-center w-full mb-7 `}
 `;
 export const Box = styled.div<{ color: string }>`
   ${tw`w-40 h-10 flex justify-center items-center border-[8px]`}
