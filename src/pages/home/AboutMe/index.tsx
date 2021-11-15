@@ -4,14 +4,17 @@ import { Icons } from "asset/svg";
 
 interface IAboutMeProps {}
 
-const AboutMe: React.FC<IAboutMeProps> = props => {
+const AboutMe: React.FC<IAboutMeProps> = (props) => {
   return (
     <AboutMeContainer className="container">
       <HeaderSession text="About me" />
       <Description>
-        Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius
-        finibus. Sed ornare sit amet lorem sed viverra. In vel urna quis libero
-        viverra facilisis ut ac est.
+        Currently, I have been working as Front-end Web Developer for a while
+        and I always try to learn and improve my knowledge to complete the
+        assigned tasks, create good products for the company and users. In the
+        future I want to go to Full-stack so I need to have a solid grasp of
+        Front-end Web Developer knowledge. So I want to find a suitable company
+        to develop myself.
       </Description>
       <Line>
         <Icons.SeparatorIcon />

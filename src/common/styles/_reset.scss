@@ -2,11 +2,12 @@ html,
 body {
   height: 100vh;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  cursor: none;
 }
 
 html {
   font-size: 100%;
-  cursor: none;
 
   @media screen and (max-width: 600px) {
     font-size: 65%;

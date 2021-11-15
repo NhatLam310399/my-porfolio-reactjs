@@ -2,7 +2,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 
 export const Ring = styled.div`
-  ${tw`laptop:block hidden`}
+  ${tw`hidden laptop:block`}
   position: fixed;
   top: 0;
   left: 0;
@@ -15,7 +15,7 @@ export const Ring = styled.div`
   z-index: 999;
   pointer-events: none;
   mix-blend-mode: difference;
-  background-color: white;
+  background-color: red;
 `;
 export const Dot = styled.div`
   position: fixed;
@@ -23,7 +23,7 @@ export const Dot = styled.div`
   left: 50%;
   width: 15px;
   height: 15px;
-  background-color: black;
+  background-color: red;
   border-radius: 100%;
   transform: translate(-50%, -50%);
   z-index: 999;
