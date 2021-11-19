@@ -49,8 +49,8 @@ const Home: React.FC = () => {
         >
           <Type.Container>
             <Type.Name>Hi guys,</Type.Name>
-            <Typing.Delay ms={300} />
-            <Type.Text>Welcome you to my portfolio !</Type.Text>
+            <Typing.Delay ms={150} />
+            <Type.Text>Welcome to my profile !</Type.Text>
           </Type.Container>
         </Typing>
       </StartScreen>

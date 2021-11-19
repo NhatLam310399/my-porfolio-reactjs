@@ -11,7 +11,7 @@ export const BannerContainer = styled.div`
 `;
 export const Avatar = {
   Container: styled.div`
-    ${tw`z-50 flex items-center justify-start w-1/2 pl-4`}
+    ${tw`relative z-50 flex items-center justify-start w-1/2 pl-4`}
   `,
   Image: styled.img`
     ${tw`object-cover h-full`}

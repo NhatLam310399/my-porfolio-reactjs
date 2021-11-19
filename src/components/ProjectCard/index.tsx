@@ -21,8 +21,7 @@ const ProjectCard: React.FC<IProjectCardProps> = (props) => {
         </Card.LogoContainer>
         <Card.Name view={view}>{project?.name}</Card.Name>
       </Card.Container>
-      <Detail.Container view={view}>Project's detail in here.</Detail.Container>
-      {/* <Detail.Container side={project.side}>{project.detail}</Detail.Container> */}
+      <Detail.Container view={view}>{project.detail}</Detail.Container>
     </ProjectCardContainer>
   );
 };

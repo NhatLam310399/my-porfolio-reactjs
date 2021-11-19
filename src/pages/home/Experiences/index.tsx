@@ -34,7 +34,7 @@ const exps: IExperience[] = [
   },
   {
     company: "USUM SOFTWARE",
-    time: "3/2021 - Now | > 6 months",
+    time: "3/2021 - 11/2021 | 8 months",
     position: "Front-end Web developer (Intern & Official staff)",
     description: [
       "- Participate in project development.",
@@ -43,6 +43,7 @@ const exps: IExperience[] = [
       "- Use some other libraries in the UI design process such as MUI, Bootstrap, React-slick, Headless UI,...",
       "- Use form processing libraries like Formik, validate like Yup.",
       "- Use Redux-saga to call api from GraphQl.",
+      "- Mentor for intern.",
     ],
   },
 ];

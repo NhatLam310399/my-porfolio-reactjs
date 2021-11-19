@@ -1,15 +1,14 @@
 import { BannerContainer, Avatar, Information } from "./styles";
 import { Icons } from "asset/svg";
 import ScrollDown from "components/Scroll";
-
 import ToolTip from "components/Tooltip";
-import User from "asset/images/avatar.png";
+import User from "asset/images/avatar2.png";
 interface IBannerProps {}
 
 const Banner: React.FC<IBannerProps> = (props) => {
   return (
     <BannerContainer>
-      <Information.Container id="tsparticles">
+      <Information.Container>
         <Information.Greeting>Hi, I am</Information.Greeting>
         <Information.Name>Nguyen Nhat Lam</Information.Name>
         <Information.Career>Front-end Web Developer</Information.Career>
@@ -47,9 +46,7 @@ const Banner: React.FC<IBannerProps> = (props) => {
           />
         </Information.Contact>
       </Information.Container>
-      <Avatar.Container>
-        <Avatar.Image src={User} />
-      </Avatar.Container>
+      <Avatar.Container>{/* <Avatar.Image src={User} /> */}</Avatar.Container>
       <ScrollDown />
     </BannerContainer>
   );
