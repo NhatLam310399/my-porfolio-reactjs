@@ -1,9 +1,9 @@
 import Particles from "react-tsparticles";
 interface IParticlesProps {}
 
-const ParticlesComponent: React.FC<IParticlesProps> = props => {
+const ParticlesComponent: React.FC<IParticlesProps> = (props) => {
   return (
-    <div className="absolute">
+    <div className="particles">
       <Particles
         id="tsparticles"
         options={{

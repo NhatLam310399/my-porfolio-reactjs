@@ -5,6 +5,10 @@ import { ReactComponent as PhoneIcon } from "./phone.svg";
 
 import { ReactComponent as DevIcon } from "./development.svg";
 import { ReactComponent as SeparatorIcon } from "./separator.svg";
+
+import { ReactComponent as MouseIcon } from "./mouse.svg";
+import { ReactComponent as BackToTopIcon } from "./backToTop.svg";
+
 import { Logo } from "./logo";
 export const Icons = {
   EmailIcon,
@@ -14,4 +18,6 @@ export const Icons = {
   DevIcon,
   SeparatorIcon,
   Logo,
+  MouseIcon,
+  BackToTopIcon,
 };

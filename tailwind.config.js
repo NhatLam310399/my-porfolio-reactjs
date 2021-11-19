@@ -84,6 +84,7 @@ const borderRadius = {
   xl: "10px",
   xxl: "15px",
   "3xl": "25%",
+  full: "50%",
 };
 
 const zIndex = {

@@ -1,20 +1,17 @@
-import { SkillsContainer, Description, Line } from "./styles";
+import { SkillsContainer } from "./styles";
 import HeaderSession from "components/HeaderSession";
 import SkillsTemplate, { ISkill } from "components/SkillTemplate";
 import { Icons } from "asset/svg";
 
 interface ISkillsProps {}
 
-const Skills: React.FC<ISkillsProps> = props => {
+const Skills: React.FC<ISkillsProps> = (props) => {
   return (
-    <SkillsContainer className="container">
-      <HeaderSession text="About me" />
+    <SkillsContainer id="skills" className="container">
+      <HeaderSession text="Skills" />
       <SkillsTemplate title="Using now" skillList={usingNowList} />
       <SkillsTemplate title="Learning" skillList={learning} />
       <SkillsTemplate title="Other skills" skillList={others} />
-      <Line>
-        <Icons.SeparatorIcon />
-      </Line>
     </SkillsContainer>
   );
 };
@@ -60,6 +57,10 @@ const usingNowList: ISkill[] = [
   {
     icon: <Icons.Logo.NextIcon />,
     name: "Next js",
+  },
+  {
+    icon: <Icons.Logo.GrapQlIcon />,
+    name: "GraphQL",
   },
 ];
 const learning: ISkill[] = [

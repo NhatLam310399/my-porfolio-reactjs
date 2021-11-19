@@ -10,7 +10,8 @@ import { ReactComponent as ReactJsIcon } from "./reactjs.svg";
 import { ReactComponent as ResearchIcon } from "./research.svg";
 import { ReactComponent as SassIcon } from "./sass.svg";
 import { ReactComponent as TSIcon } from "./ts.svg";
-import { ReactComponent as NextIcon } from "./Nextjs.svg";
+import { ReactComponent as NextIcon } from "./nextjs.svg";
+import { ReactComponent as GrapQlIcon } from "./graphql.svg";
 export const Logo = {
   BootstrapIcon,
   CssIcon,
@@ -24,4 +25,5 @@ export const Logo = {
   SassIcon,
   TSIcon,
   NextIcon,
+  GrapQlIcon,
 };
