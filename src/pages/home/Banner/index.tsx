@@ -5,7 +5,7 @@ import ToolTip from "components/Tooltip";
 import User from "asset/images/avatar2.png";
 interface IBannerProps {}
 
-const Banner: React.FC<IBannerProps> = (props) => {
+const Banner: React.FC<IBannerProps> = props => {
   return (
     <BannerContainer>
       <Information.Container>
@@ -46,7 +46,7 @@ const Banner: React.FC<IBannerProps> = (props) => {
           />
         </Information.Contact>
       </Information.Container>
-      <Avatar.Container>{/* <Avatar.Image src={User} /> */}</Avatar.Container>
+      <Avatar.Container />
       <ScrollDown />
     </BannerContainer>
   );

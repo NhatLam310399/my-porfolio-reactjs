@@ -10,7 +10,7 @@ export interface IProject {
   detail: JSX.Element;
   color: string;
 }
-const ProjectCard: React.FC<IProjectCardProps> = (props) => {
+const ProjectCard: React.FC<IProjectCardProps> = props => {
   const { children, project } = props;
   const [view, setView] = useState(false);
   return (
@@ -19,6 +19,7 @@ const ProjectCard: React.FC<IProjectCardProps> = (props) => {
         <Card.LogoContainer view={view} color={project.color}>
           <Card.Logo view={view} src={project?.urlImage} />
         </Card.LogoContainer>
+        <Card.Divider show={view}>{`>>`}</Card.Divider>
         <Card.Name view={view}>{project?.name}</Card.Name>
       </Card.Container>
       <Detail.Container view={view}>{project.detail}</Detail.Container>

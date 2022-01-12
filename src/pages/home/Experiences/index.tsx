@@ -5,7 +5,7 @@ import { Icons } from "asset/svg";
 
 interface IExperiencesProps {}
 
-const Experiences: React.FC<IExperiencesProps> = (props) => {
+const Experiences: React.FC<IExperiencesProps> = props => {
   return (
     <ExperienceContainer id="experience" className="container">
       <HeaderSession text="Experience" />
@@ -44,6 +44,16 @@ const exps: IExperience[] = [
       "- Use form processing libraries like Formik, validate like Yup.",
       "- Use Redux-saga to call api from GraphQl.",
       "- Mentor for intern.",
+    ],
+  },
+  {
+    company: "CÔNG TY TNHH EG TECH GROUP",
+    time: "12/2022 - Present",
+    position: "Front-end Web developer (Official staff)",
+    description: [
+      "- Participate in project development.",
+      "- Use Next JS library for Blockchain website.",
+      "- Use Rest-ful API",
     ],
   },
 ];

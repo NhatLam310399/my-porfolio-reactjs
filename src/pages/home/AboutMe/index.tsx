@@ -4,9 +4,9 @@ import { Icons } from "asset/svg";
 
 interface IAboutMeProps {}
 
-const AboutMe: React.FC<IAboutMeProps> = (props) => {
+const AboutMe: React.FC<IAboutMeProps> = props => {
   return (
-    <AboutMeContainer id="aboutMe" className="container">
+    <AboutMeContainer id="aboutMe">
       <HeaderSession text="About me" />
       <Description>
         Currently, I have been working as Front-end Web Developer for a while

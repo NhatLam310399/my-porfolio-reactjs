@@ -2,10 +2,10 @@ import styled from "styled-components";
 import tw from "twin.macro";
 
 export const HeaderSessionContainer = styled.div`
-  ${tw`flex justify-center w-full mb-7 `}
+  ${tw`flex justify-center w-full mb-4 phone:mb-7 `}
 `;
 export const Box = styled.div<{ color: string }>`
-  ${tw`w-40 h-10 flex justify-center items-center border-[8px]`}
+  ${tw`phone:w-40 phone:h-10 w-30 h-8 flex justify-center items-center border-[8px]`}
 
   ${({ color }) => color === "primary" && `border: 8px solid #000000 `}
   ${({ color }) => color === "secondary-1" && `border:8px solid #D7D7D7 `}

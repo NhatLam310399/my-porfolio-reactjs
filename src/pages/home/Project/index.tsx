@@ -5,6 +5,7 @@ import {
   Detail,
   DetailContainer,
   Highlight,
+  BoxProjectMobile,
 } from "./styles";
 import HeaderSession from "components/HeaderSession";
 import ProjectCard, { IProject } from "components/ProjectCard";
@@ -16,18 +17,18 @@ import KingifyLogo from "asset/images/logo-kingify.png";
 import EverLogo from "asset/images/logo-ever.png";
 interface IProjectProps {}
 
-const Project: React.FC<IProjectProps> = (props) => {
+const Project: React.FC<IProjectProps> = props => {
   const projectList: IProject[] = [
     {
       name: "Tuyendung",
       detail: (
         <DetailContainer>
           <Detail>
-            <Highlight>Nhà tuyển dụng</Highlight> có thể đăng bài tuyển dụng và
-            đánh giá ứng viên.
+            <Highlight>Nhà tuyển dụng:</Highlight> Đăng bài tuyển dụng và đánh
+            giá ứng viên...
           </Detail>
           <Detail>
-            <Highlight>Người tìm việc</Highlight> tìm công việc và ứng tuyển.
+            <Highlight>Người tìm việc:</Highlight> Tìm công việc và ứng tuyển..
           </Detail>
         </DetailContainer>
       ),
@@ -39,8 +40,8 @@ const Project: React.FC<IProjectProps> = (props) => {
       detail: (
         <DetailContainer>
           <Detail>
-            <Highlight>Manager Website:</Highlight> quản lý số lượng phòng và
-            quản lý được thông tin đặt phòng của khách hàng.
+            <Highlight>Manager Website:</Highlight> Quản lý số lượng phòng và
+            quản lý được thông tin đặt phòng của khách hàng...
           </Detail>
         </DetailContainer>
       ),
@@ -53,9 +54,9 @@ const Project: React.FC<IProjectProps> = (props) => {
       detail: (
         <DetailContainer>
           <Detail>
-            <Highlight>Seller Website:</Highlight> quản lý được thông tin của
+            <Highlight>Seller Website:</Highlight> Quản lý được thông tin của
             người dùng đặt hàng và tự thiết kế sản phẩm theo mong muốn và đăng
-            bán.
+            bán...
           </Detail>
         </DetailContainer>
       ),
@@ -68,8 +69,8 @@ const Project: React.FC<IProjectProps> = (props) => {
       detail: (
         <DetailContainer>
           <Detail>
-            <Highlight>Admin Website:</Highlight> quản lý người dùng, quản lý
-            sân, số lượng sân và thông tin đặt sân của khách hàng.
+            <Highlight>Admin Website:</Highlight> Quản lý người dùng, quản lý
+            sân, số lượng sân và thông tin đặt sân của khách hàng...
           </Detail>
         </DetailContainer>
       ),
@@ -88,14 +89,18 @@ const Project: React.FC<IProjectProps> = (props) => {
           transition={1}
           swiping
           swipeOn={1}
-          responsive
           slide={2}
         >
-          {projectList.map((project) => (
+          {projectList.map(project => (
             <ProjectCard project={project} />
           ))}
         </Carousel>
       </BoxProject>
+      <BoxProjectMobile>
+        {projectList.map(project => (
+          <ProjectCard project={project} />
+        ))}
+      </BoxProjectMobile>
     </ProjectContainer>
   );
 };

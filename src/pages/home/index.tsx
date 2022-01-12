@@ -13,7 +13,18 @@ import Project from "./Project";
 import Experiences from "./Experiences";
 import Footer from "./Footer";
 
-import { HomeContainer, Typing as Type, Line } from "./styles";
+import {
+  HomeContainer,
+  Typing as Type,
+  Line,
+  NavSideBar,
+  OverlayModal,
+  Head,
+  NavMobileHome,
+  Item,
+  NavItem,
+  Content,
+} from "./styles";
 
 const Home: React.FC = () => {
   const [openModal, setOpenModal] = useState(true);
@@ -54,6 +65,26 @@ const Home: React.FC = () => {
           </Type.Container>
         </Typing>
       </StartScreen>
+      <NavSideBar>
+        <Head>
+          <NavMobileHome>L</NavMobileHome>
+        </Head>
+        <Content>
+          <NavItem>
+            <Item href="#aboutMe">About me</Item>
+          </NavItem>
+          <NavItem>
+            <Item href="#skills">Skills</Item>
+          </NavItem>
+          <NavItem>
+            <Item href="#project">Project</Item>
+          </NavItem>
+          <NavItem>
+            <Item href="#experience">Experience</Item>
+          </NavItem>
+        </Content>
+      </NavSideBar>
+      <OverlayModal />
     </>
   );
 };
